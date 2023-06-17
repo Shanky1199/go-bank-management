@@ -1,2 +1,2 @@
-# go-bank-management
-sample go-bank management for learning
+# Go-lang-learning
+put go-lang-learning
