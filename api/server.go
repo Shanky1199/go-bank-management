@@ -1,8 +1,8 @@
 package api
 
 import (
+	db "github.com/Shanky1199/go-bank-management/db/sqlc"
 	"github.com/gin-gonic/gin"
-	db "github.com/techschool/simplebank/db/sqlc"
 )
 
 // Server serves HTTP requests for our banking service.

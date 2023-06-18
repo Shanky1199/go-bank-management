@@ -4,10 +4,10 @@ import (
 	"database/sql"
 	"log"
 
+	"github.com/Shanky1199/go-bank-management/api"
+	db "github.com/Shanky1199/go-bank-management/db/sqlc"
+	"github.com/Shanky1199/go-bank-management/util"
 	_ "github.com/lib/pq"
-	"github.com/techschool/simplebank/api"
-	db "github.com/techschool/simplebank/db/sqlc"
-	"github.com/techschool/simplebank/util"
 )
 
 func main() {

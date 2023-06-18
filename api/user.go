@@ -3,7 +3,7 @@ package api
 import (
 	"time"
 
-	db "github.com/techschool/simplebank/db/sqlc"
+	db "github.com/Shanky1199/go-bank-management/db/sqlc"
 )
 
 type createUserRequest struct {
