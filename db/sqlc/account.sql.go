@@ -5,6 +5,7 @@ package db
 
 import (
 	"context"
+	"fmt"
 )
 
 const addAccountBalance = `-- name: AddAccountBalance :one
@@ -13,7 +14,6 @@ SET balance = balance + $1
 WHERE id = $2
 RETURNING id, owner, balance, currency, created_at
 `
-
 type AddAccountBalanceParams struct {
 	Amount int64 `json:"amount"`
 	ID     int64 `json:"id"`
@@ -29,6 +29,7 @@ func (q *Queries) AddAccountBalance(ctx context.Context, arg AddAccountBalancePa
 		&i.Currency,
 		&i.CreatedAt,
 	)
+	fmt.Println("account created")
 	return i, err
 }
 
