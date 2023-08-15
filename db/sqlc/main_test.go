@@ -6,8 +6,8 @@ import (
 	"os"
 	"testing"
 
+	"github.com/Shanky1199/go-bank-management/util"
 	"github.com/jackc/pgx/v5/pgxpool"
-	"github.com/techschool/simplebank/util"
 )
 
 var testStore Store
