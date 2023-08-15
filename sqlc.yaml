@@ -1,7 +1,7 @@
 version: "2"
 sql:
 - schema: "db/migration"
-  queries: "db/query"
+  queries: "db/query/transfer.sql"
   engine: "postgresql"
   gen:
     go: 
