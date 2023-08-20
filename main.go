@@ -2,6 +2,7 @@ package main
 
 import (
 	"context"
+	"fmt"
 	"net"
 	"net/http"
 	"os"
@@ -117,6 +118,8 @@ func runGatewayServer(config util.Config, store db.Store, taskDistributor worker
 			DiscardUnknown: true,
 		},
 	})
+
+	fmt.Println(server)
 
 	grpcMux := runtime.NewServeMux(jsonOption)
 
